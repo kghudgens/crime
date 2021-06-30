@@ -12,6 +12,12 @@ Crime Ward is meant to provide the user knowledge about crimes in the area.
 
 ---
 
+<<<<<<< HEAD
+
+=======
+
+> > > > > > > 0de4f178a000e80f05a3c1cf08420fd3aa5a8de6
+
 ## License & copyright
 
 © 2021 Kevin Hudgens, Software Engineer
