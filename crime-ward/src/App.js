@@ -2,14 +2,14 @@ import "./App.css";
 
 const Navbar = () => {
   return (
-    <>
-      <h1>Crime Ward</h1>
-      <ul>
+    <div className="container">
+      <h1 className="title">Crime Ward</h1>
+      <ul className="menu navigation-bar">
         <li>Home</li>
         <li>Log In</li>
         <li>Register</li>
       </ul>
-    </>
+    </div>
   );
 };
 
