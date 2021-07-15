@@ -7,7 +7,7 @@ function App(props) {
     {
       title: "Murder",
       author: "kevinhudgens",
-      date: new Date(2021, 7, 11),
+      date: new Date(2021, 7, 11).toISOString(),
       location: "South Carolina",
       content: "There was a killing in south carolina ",
     },
