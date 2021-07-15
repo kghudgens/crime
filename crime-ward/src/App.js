@@ -2,7 +2,7 @@ import "./App.css";
 import Posts from "./components/Content/Posts";
 import Navbar from "./components/UI/Navbar";
 
-function App() {
+function App(props) {
   const postList = [
     {
       title: "Murder",
@@ -20,10 +20,12 @@ function App() {
     },
   ];
 
+  console.log(props);
+
   return (
     <div>
-      <Navbar />;
-      <Posts />;
+      <Navbar />;{/* Pass in the list to the post component */}
+      <Posts items={postList} />;
     </div>
   );
 }
