@@ -1,6 +1,7 @@
 import "./App.css";
 import Posts from "./components/Content/Posts";
 import Navbar from "./components/UI/Navbar";
+import Banner from "./components/UI/Banner";
 
 function App(props) {
   const postList = [
@@ -20,11 +21,10 @@ function App(props) {
     },
   ];
 
-  console.log(props);
-
   return (
     <div>
       <Navbar />;{/* Pass in the list to the post component */}
+      <Banner />;
       <Posts items={postList} />;
     </div>
   );
