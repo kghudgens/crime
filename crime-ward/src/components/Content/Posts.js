@@ -1,14 +1,15 @@
 import "./Posts.css";
+import PostItems from "./PostItems";
 
 const Posts = (props) => {
   return (
-    <div>
-      <h2>Title</h2>
-      <h3>Author</h3>
-      <h3>Date</h3>
-      <h3>Location</h3>
-      <p>Content</p>
-    </div>
+    <PostItems
+      title={props.items[0].title}
+      author={props.items[0].author}
+      date={props.items[0].date}
+      location={props.items[0].location}
+      content={props.items[0].content}
+    />
   );
 };
 
