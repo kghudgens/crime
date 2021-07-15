@@ -2,7 +2,7 @@ import "./PostItems.css";
 
 const PostItems = (props) => {
   return (
-    <div>
+    <div className="container">
       <h2>{props.title} </h2>
       <h3>{props.author}</h3>
       <h3>{props.date}</h3>
