@@ -1,15 +1,20 @@
 import "./Navbar.css";
 import React from "react";
+import Login from "../SignIn/Login";
 
 const Navbar = () => {
+  const displayLogin = () => {
+    <Login />;
+  };
+
   return (
-    <nav className="navbar navbar-expand-lg navbar-light">
+    <nav className="navbar navbar-expand-lg navbar-light bg-secondary">
       <a className="navbar-brand" href="#">
         Crime Ward
       </a>
       <div className="collapse navbar-collapse" id="navbarText">
         <ul className="navbar-nav mr-auto">
-          <li className="nav-item active">
+          <li className="nav-item">
             <a className="nav-link" href="#">
               Home
             </a>
@@ -25,7 +30,9 @@ const Navbar = () => {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link">Log In</a>
+            <a className="nav-link" href="#" onClick={displayLogin}>
+              Log In
+            </a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#">
